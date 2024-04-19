@@ -64,12 +64,12 @@ type ParamsStruct struct {
 }
 ```
 
-p.HomeDir       - the home directory of the user running the current command
-p.Path          - the path where labeler is executing from (where labeler is installed)
-p.OriginalCmd   - contains entire command that was given at the command line - this may come in handy as a way to run another command with the same args
-p.Kubeconfig    - the kubeconfig used during run - whatever was given to the command line
-p.ClientSet, p.RestConfig, and p.DynamicClient - all ready for you to use in the context given to the original command.
-p.Flags and p.Params - the args on the original command line
-p.Resources     - a list of all the GVK and the object definitions that helm, kubectl, and kustomize applied/created/installed/upgraded/templated/dry-run'ed
-p.PluginArgs    - any command line switches that are reported back by the runtime or compile-time plugins
-p.PluginPtrs    - the function pointer reported back by the runtime or compile-time plugins
+- p.HomeDir       - the home directory of the user running the current command
+- p.Path          - the path where labeler is executing from (where labeler is installed)
+- p.OriginalCmd   - contains entire command that was given at the command line - this may come in handy as a way to run another command with the same args
+- p.Kubeconfig    - the kubeconfig used during run - whatever was given to the command line
+- p.ClientSet, p.RestConfig, and p.DynamicClient - all ready for you to use in the context given to the original command.
+- p.Flags and p.Params - the args on the original command line
+- p.Resources     - a list of all the GVK and the object definitions that helm, kubectl, and kustomize applied/created/installed/upgraded/templated/dry-run'ed
+- p.PluginArgs    - any command line switches that are reported back by the runtime or compile-time plugins
+- p.PluginPtrs    - the function pointer reported back by the runtime or compile-time plugins
